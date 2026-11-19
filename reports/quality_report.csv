@@ -1,0 +1,16 @@
+check,status,details,time
+row countsales,PASS,"expected 0, got 0",2026-11-18 18:15:35
+row countusers,PASS,"expected 10, got 10",2026-11-18 18:15:35
+row countposts,PASS,"expected 100, got 100",2026-11-18 18:15:35
+nullssales,PASS,total nulls: 0,2026-11-18 18:15:35
+nullsusers,PASS,total nulls: 0,2026-11-18 18:15:35
+nullsposts,PASS,total nulls: 0,2026-11-18 18:15:35
+duplicatessales,PASS,total duplicates: 0,2026-11-18 18:15:35
+duplicatesusers,PASS,total duplicates: 0,2026-11-18 18:15:35
+duplicatesposts,PASS,total duplicates: 0,2026-11-18 18:15:35
+foreign key posts.user_id -> users.id,PASS,0 rows have no matching parent,2026-11-18 18:15:35
+sales.quantity > 0,PASS,total negative values: 0,2026-11-18 18:15:35
+sales.unit_price > 0,PASS,total negative values: 0,2026-11-18 18:15:35
+schema sales,PASS,all expected columns are there,2026-11-18 18:15:35
+schema users,PASS,all expected columns are there,2026-11-18 18:15:35
+schema posts,PASS,all expected columns are there,2026-11-18 18:15:35
